@@ -23,7 +23,7 @@ function buildFinalLines(steps: Step[]): Line[] {
 
 export default function useTypewriter() {
   const linesRef = useRef<Line[]>([{ text: '' }])
-  const [tick, setTick] = useState(0)
+  const [_tick, setTick] = useState(0)
   const [done, setDone] = useState(false)
   const isMounted = useRef(true)
   const skipped = useRef(false)
