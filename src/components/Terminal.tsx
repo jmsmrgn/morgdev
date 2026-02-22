@@ -44,11 +44,9 @@ export default function Terminal() {
               JM
             </text>
           </svg>
-          <span className="terminal-header-name">jmsmrgn</span>
+          <span className="terminal-header-name">@jmsmrgn</span>
         </div>
-        <span className="terminal-header-meta">
-          @jmsmrgn &middot; chicago, il
-        </span>
+        <span className="terminal-header-meta">SF/NYC/CHI</span>
       </header>
       <div className="terminal-window" onClick={skip}>
         <div className="terminal-titlebar">
@@ -71,6 +69,19 @@ export default function Terminal() {
         <div className="terminal-body">
           {lines.map((line, i) => {
             const isLast = i === lines.length - 1;
+
+            if (line.text.includes("·")) {
+              return (
+                <div key={i} className={`terminal-line terminal-line-detail${line.className ? ` ${line.className}` : ""}`}>
+                  <span className="detail-label">{line.text.split("·")[0].trimEnd()} ·</span>
+                  <span className="detail-value">
+                    {line.text.split("·")[1].trimStart()}
+                    {isLast && !done && <span className="cursor">█</span>}
+                  </span>
+                </div>
+              );
+            }
+
             return (
               <div
                 key={i}
@@ -101,7 +112,9 @@ export default function Terminal() {
           >
             [ linkedin ]
           </a>
-          <a href="https://x.com/jmsmrgn" target="_blank" rel="noopener">[ x.com ]</a>
+          <a href="https://x.com/jmsmrgn" target="_blank" rel="noopener">
+            [ x.com ]
+          </a>
           <a href="mailto:james@morg.dev">[ email ]</a>
         </footer>
       </div>
