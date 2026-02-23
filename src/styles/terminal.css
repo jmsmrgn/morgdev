@@ -285,7 +285,7 @@
   .terminal-root {
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 40px;
+    padding: 40px 27px 0 20px;
     min-height: auto;
     height: auto;
   }
@@ -301,7 +301,7 @@
   }
 
   .terminal-body {
-    padding: 20px 16px;
+    padding: 20px 20px 20px 16px;
     min-height: 0;
   }
 
