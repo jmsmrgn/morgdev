@@ -26,7 +26,7 @@ export const sequence: Step[] = [
   { type: "pause", ms: 80 },
   {
     type: "type",
-    text: "  @jmsmrgn everywhere",
+    text: "  @jmsmrgn",
     speed: 8,
     className: "terminal-line-muted",
   },
@@ -89,7 +89,7 @@ export const sequence: Step[] = [
   { type: "newline" },
   {
     type: "type",
-    text: "  JavaScript/TypeScript, Node.js, React, Python, APIs (REST/GraphQL), SQL, AI/ML workflows, RAG systems, LLM tooling",
+    text: "  JavaScript/TypeScript, Node.js, React, Python, APIs (REST/GraphQL/WebSockets), SQL, Vector DBs, AI/ML workflows, RAG systems, LLM tooling",
     speed: 8,
   },
   { type: "newline" },
