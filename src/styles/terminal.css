@@ -10,12 +10,6 @@
   --color-link: #00aa2a;
 }
 
-@supports (min-height: 100dvh) {
-  .terminal-root {
-    min-height: 100dvh;
-  }
-}
-
 .terminal-root {
   min-height: 100vh;
   min-height: 100dvh;
@@ -289,7 +283,11 @@
 
 @media (max-width: 600px) {
   .terminal-root {
-    padding: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 40px;
+    min-height: auto;
+    height: auto;
   }
 
   .terminal-header {
@@ -304,7 +302,7 @@
 
   .terminal-body {
     padding: 20px 16px;
-    min-height: 360px;
+    min-height: 0;
   }
 
   .terminal-line {
