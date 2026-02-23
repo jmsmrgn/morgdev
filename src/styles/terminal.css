@@ -285,7 +285,7 @@
   .terminal-root {
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 40px 27px 0 20px;
+    padding: 40px 17px;
     min-height: auto;
     height: auto;
   }

@@ -103,7 +103,6 @@ export const sequence: Step[] = [
   { type: "pause", ms: 500 },
   { type: "newline" },
   { type: "newline" },
-  { type: "newline" },
-  { type: "type", text: "  Drop me a line!", speed: 8 },
+  { type: "type", text: "  Drop me a line! 👋", speed: 8 },
   { type: "done" },
 ];
