@@ -19,7 +19,7 @@ export const sequence: Step[] = [
   { type: "pause", ms: 80 },
   {
     type: "type",
-    text: "  Senior Solutions Engineer & Fullstack Developer",
+    text: "  Senior Solutions Engineer & Fullstack Dev",
     speed: 8,
   },
   { type: "newline" },
@@ -105,7 +105,5 @@ export const sequence: Step[] = [
   { type: "newline" },
   { type: "newline" },
   { type: "type", text: "  Drop me a line!", speed: 8 },
-  { type: "pause", ms: 300 },
-  { type: "newline" },
   { type: "done" },
 ];
