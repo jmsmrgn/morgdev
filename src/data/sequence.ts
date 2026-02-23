@@ -96,7 +96,7 @@ export const sequence: Step[] = [
   { type: "pause", ms: 80 },
   {
     type: "type",
-    text: "  Recently: LLM evals & agent observability",
+    text: "  Lately: LLM evals & agent observability",
     speed: 8,
     className: "terminal-line-muted",
   },

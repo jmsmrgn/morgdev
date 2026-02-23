@@ -44,7 +44,7 @@ export default function Terminal() {
               JM
             </text>
           </svg>
-          <span className="terminal-header-name">@jmsmrgn</span>
+          <span className="terminal-header-name">jmsmrgn</span>
         </div>
         <span className="terminal-header-meta">SF/NYC/CHI</span>
       </header>
@@ -72,8 +72,13 @@ export default function Terminal() {
 
             if (line.text.includes("·")) {
               return (
-                <div key={i} className={`terminal-line terminal-line-detail${line.className ? ` ${line.className}` : ""}`}>
-                  <span className="detail-label">{line.text.split("·")[0].trimEnd()} ·</span>
+                <div
+                  key={i}
+                  className={`terminal-line terminal-line-detail${line.className ? ` ${line.className}` : ""}`}
+                >
+                  <span className="detail-label">
+                    {line.text.split("·")[0].trimEnd()} ·
+                  </span>
                   <span className="detail-value">
                     {line.text.split("·")[1].trimStart()}
                     {isLast && !done && <span className="cursor">█</span>}

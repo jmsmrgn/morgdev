@@ -10,8 +10,15 @@
   --color-link: #00aa2a;
 }
 
+@supports (min-height: 100dvh) {
+  .terminal-root {
+    min-height: 100dvh;
+  }
+}
+
 .terminal-root {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
