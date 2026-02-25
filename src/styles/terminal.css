@@ -144,7 +144,7 @@
 
 .terminal-body {
   background: rgba(0, 0, 0, 0.75);
-  padding: 36px 36px;
+  padding: 36px;
   min-height: 520px;
   overflow-x: hidden;
 }
@@ -205,7 +205,13 @@
 
 .terminal-line-muted {
   color: var(--color-muted);
-  /* font-style: italic; */
+  padding-top: 20px;
+  font-weight: lighter;
+}
+.terminal-line-muted {
+  color: var(--color-muted);
+  padding-top: 7px;
+  margin-bottom: -7px;
 }
 
 .terminal-line-now .detail-label {
@@ -218,6 +224,7 @@
   display: inline-block;
   animation: blink 1s step-end infinite;
   color: var(--green-primary);
+  padding-left: 38px;
 }
 
 .terminal-hint {
@@ -285,14 +292,13 @@
   .terminal-root {
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 40px 17px;
+    padding: 30px 17px;
     min-height: auto;
     height: auto;
   }
 
   .terminal-header {
     margin-bottom: 16px;
-    /* padding: 16px 16px 0; */
   }
 
   .terminal-header-meta {
@@ -301,7 +307,7 @@
   }
 
   .terminal-body {
-    padding: 20px 20px 20px 16px;
+    padding: 12px 20px 12px 16px;
     min-height: 0;
   }
 
@@ -310,16 +316,12 @@
   }
 
   .terminal-line-detail {
-    display: grid;
-    grid-template-columns: 6ch auto 1fr;
     align-items: start;
   }
 
   .detail-value {
     grid-column: 3;
-    white-space: normal;
-    word-break: break-word;
-    overflow-wrap: break-word;
+    padding-left: 25px;
   }
 
   .terminal-links {
@@ -333,5 +335,8 @@
     font-size: 11px;
     letter-spacing: 0.02em;
     white-space: nowrap;
+  }
+  .cursor {
+    padding-left: 31px;
   }
 }
